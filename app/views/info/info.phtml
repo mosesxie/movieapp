@@ -1,0 +1,26 @@
+<?php
+
+echo "<h1>More Info</h1>";
+
+echo PHP_EOL;
+
+echo PHP_EOL;
+
+
+echo $title;
+
+echo "<br/>";
+
+$image = 'http://image.tmdb.org/t/p/w150' . $image;
+
+$imageData = base64_encode(file_get_contents($image));
+
+echo '<img src="data:image/jpeg;base64,'.$imageData.'">';
+
+echo "<br/>";
+
+echo $release_date;
+
+echo "<br/>";
+
+echo $overview;
